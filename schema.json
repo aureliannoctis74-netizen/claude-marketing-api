@@ -1,0 +1,23 @@
+{
+  "name": "marketing_strategy_generator",
+  "description": "Gera estratégias de marketing personalizadas para diferentes canais",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "tipo": {
+        "type": "string",
+        "description": "Tipo de marketing: email, social, seo, crm",
+        "enum": ["email", "social", "seo", "crm"]
+      },
+      "objetivo": {
+        "type": "string",
+        "description": "Objetivo principal (ex: aumentar vendas, gerar leads)"
+      },
+      "publico_alvo": {
+        "type": "string",
+        "description": "Descrição do público-alvo (opcional)"
+      }
+    },
+    "required": ["tipo", "objetivo"]
+  }
+}
